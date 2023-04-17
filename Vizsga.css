@@ -1,0 +1,135 @@
+body{
+    margin: auto;
+  width: 100%;
+  }
+  
+  #yeah{
+    display: none;
+  }
+  
+  .container1{
+    
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    grid-template-areas: " icon about";
+    height: 197px;
+    
+    }
+   .about{
+  
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 25%);
+        align-items: center;
+        justify-content: center;
+        grid-template-areas: "about1 about2 about3 about4";
+    }
+    .icon{
+      background-image: url(../Média/20nytoday-we-heart-ny-videoSixteenByNine3000.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      grid-area: icon;
+      width: 100%;
+      height: auto;
+      }
+    
+   .about1, .about2, .about3, .about4{
+        
+        color: black;
+        margin: 30px;
+        text-align: center;
+        padding: 15px;
+        border: 1px solid black;
+        
+        }
+  
+      .about1{
+        grid-area: about1;
+  } 
+  
+      .about2{
+        grid-area: about2;
+  }
+  .about3{
+    grid-area: about3;
+  }
+  
+  .about4{
+    grid-area: about4;
+  }
+  
+  @media screen and (max-width:480px){
+  #yeah{
+    display: grid;
+    
+    
+    height: 200px;
+    
+  }
+  .container1{
+    display: grid;
+   
+    grid-template-columns: repeat(1,100%);
+    grid-template-areas:
+    "icon"
+    "about1"
+    "about2"
+    "about3"
+    "about4";
+    }
+    .about{
+    
+      display: block;
+      
+      grid-template-columns: repeat(1, 100%);
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width:800px){
+    .about{
+      grid-template-columns: repeat(2,50%);
+      grid-template-areas:
+      
+      "about1 about2"
+      "about3 about4";
+      column-gap: 3px;
+      row-gap: 3px;
+      }
+    }
+      
+    
+  #describe1{
+    padding: 50px;
+    text-align: center;
+    font-family: bradley hand, cursive;
+    font-size: xxx-large;
+    margin-bottom: 100px;
+  }
+  
+  .container2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 150px;
+    
+    
+  }
+  
+  .container2 video{
+    width: 100%;
+  }
+  
+  .centered {
+   
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    border:  5px solid red;
+    opacity: 85%;
+    border-style:inset;
+  }
+  
